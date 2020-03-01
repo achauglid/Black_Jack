@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 
 namespace BlackJack
 {
-    /// <summary>
+    /// Austin Hauglid MIS 3033
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
