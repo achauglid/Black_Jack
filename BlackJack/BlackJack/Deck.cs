@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+/// <summary>
+/// Austin Hauglid Black Jack program
+/// </summary>
 namespace BlackJack
 {
-    public class Deck
+    public class Deck  // imports data about deck
     {
         public String success { get; set; }
         public String deck_id { get; set; }
@@ -14,7 +16,7 @@ namespace BlackJack
 
 
 
-        public string displayImg()
+        public string displayImg()      // gets url for pic
         {
             String msg = "";
 
@@ -26,7 +28,7 @@ namespace BlackJack
 
         }
 
-        public string getValue()
+        public string getValue()        // gets valye of card
         {
             string val = "";
             foreach (var item in cards)

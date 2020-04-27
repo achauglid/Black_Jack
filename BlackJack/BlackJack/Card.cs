@@ -4,11 +4,13 @@ using System.Collections.Generic;
 
 using System.Text;
 
-
+/// <summary>
+/// Austin Hauglid Black Jack program
+/// </summary>
 
 namespace BlackJack
 {
-    class Card
+    class Card  // takes orginal deck
     {
         public Boolean success { get; set; }
         public String deck_id { get; set; }

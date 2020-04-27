@@ -19,7 +19,7 @@ using System.Windows.Shapes;
 namespace BlackJack
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Austin Hauglid Black Jack program
     /// </summary>
     public partial class MainWindow : Window
     {

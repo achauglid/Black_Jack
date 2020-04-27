@@ -15,6 +15,9 @@
         <Image x:Name="cardTwo" HorizontalAlignment="Left" Height="138" Margin="564,217,0,0" VerticalAlignment="Top" Width="131"/>
         <Image x:Name="dealerCardOne" HorizontalAlignment="Left" Height="126" Margin="131,204,0,0" VerticalAlignment="Top" Width="91"/>
         <Image x:Name="dealerCardTwo" HorizontalAlignment="Left" Height="128" Margin="21,204,0,0" VerticalAlignment="Top" Width="98"/>
+        <Label Content="Your hand" HorizontalAlignment="Left" Height="30" Margin="515,199,0,0" VerticalAlignment="Top" Width="166"/>
+        <Label Content="Dealer hand" HorizontalAlignment="Left" Height="27" Margin="34,181,0,0" VerticalAlignment="Top" Width="151"/>
+
 
     </Grid>
 </Window>
