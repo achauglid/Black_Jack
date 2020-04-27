@@ -7,8 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="330,345,0,0" Click="Button_Click"/>
-        <ListBox x:Name="lsttest" HorizontalAlignment="Left" Height="169" Margin="96,90,0,0" VerticalAlignment="Top" Width="435"/>
+        <Button x:Name="btnGetDeck" Content="Start Game!" Margin="428,356,180,19" Click="Button_Click"/>
+        <ListBox x:Name="lst" HorizontalAlignment="Left" Height="155" Margin="21,29,0,0" VerticalAlignment="Top" Width="303"/>
+        <Image x:Name="card" HorizontalAlignment="Left" Height="137" Margin="635,217,0,0" VerticalAlignment="Top" Width="129"/>
+        <Button x:Name="btnNewCard" Content="Draw Card" HorizontalAlignment="Left" Height="48" Margin="204,362,0,0" VerticalAlignment="Top" Width="196" Click="btnNewCard_Click"/>
+        <Button x:Name="btnHold" Content="Hold" HorizontalAlignment="Left" Height="50" Margin="47,360,0,0" VerticalAlignment="Top" Width="138"/>
+        <Image x:Name="cardTwo" HorizontalAlignment="Left" Height="138" Margin="564,217,0,0" VerticalAlignment="Top" Width="131"/>
+        <Image x:Name="dealerCardOne" HorizontalAlignment="Left" Height="126" Margin="131,204,0,0" VerticalAlignment="Top" Width="91"/>
+        <Image x:Name="dealerCardTwo" HorizontalAlignment="Left" Height="128" Margin="21,204,0,0" VerticalAlignment="Top" Width="98"/>
 
     </Grid>
 </Window>

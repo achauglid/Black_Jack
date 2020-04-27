@@ -1,35 +1,96 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace BlackJack
 {
-    class Deck
+    public class Deck
     {
+        public String success { get; set; }
+        public String deck_id { get; set; }
+
+        public cards[] cards = new cards[1];
         public int remaining { get; set; }
-        public Boolean sucess { get; set; }
-        public string deckID { get; set; }
-        public Boolean shuffled { get; set; }
-        
 
 
-        public string getDeck()
+
+        public string displayImg()
         {
-            string url = "https://deckofcardsapi.com/api/deck/new/";
-            string json = new WebClient().DownloadString(url);
+            String msg = "";
 
-            Deck newDeck = new Deck();
+            foreach (var item in cards)
+            {
+                msg += $"\n{item.image}";
+            }
+            return msg;
 
-            newDeck = JsonConvert.DeserializeObject<Deck>(json);
+        }
+
+        public string getValue()
+        {
+            string val = "";
+            foreach (var item in cards)
+            {
+                if (item.value == "ACE")
+                {
+                    val = "2000";
+                }
+                else if (item.value == "JACK")
+                {
+                    val = "10";
+
+                }
+                else if (item.value == "QUEEN")
+                {
+                    val = "10";
+                }
+                else if (item.value == "KING")
+                {
+                    val = "10";
+                }
+                else
+                {
+                    val += $"\n{item.value}";
+                }
 
 
-            return deckID;
+            }
+            return val;
+
+        }
+
+        public string getSuit()
+        {
+            string suit = "";
+            foreach (var item in cards)
+            {
+                suit += $"\n{item.suit}";
+            }
+            return suit;
+
         }
 
 
+
     }
+
+
+    public class cards
+    {
+        public string code { get; set; }
+        public String image { get; set; }
+        public images imagesO { get; set; }
+        public String value { get; set; }
+        public String suit { get; set; }
+
+
+    }
+
+    public class images
+    {
+        public String svg { get; set; }
+        public String png { get; set; }
+
+    }
+
 }
