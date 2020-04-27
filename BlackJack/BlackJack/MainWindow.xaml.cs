@@ -24,5 +24,20 @@ namespace BlackJack
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Deck newDeck = new Deck();
+
+            newDeck.getDeck();
+            lsttest.Items.Add(newDeck.getDeck());
+            lsttest.Items.Add(newDeck.remaining);
+
+
+           // Card newCard = new Card();
+
+            //lsttest.Items.Add(newCard.drawCard(newDeck.getDeck()));
+
+        }
     }
 }
